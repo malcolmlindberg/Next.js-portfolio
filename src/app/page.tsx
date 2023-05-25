@@ -1,7 +1,14 @@
+import FrontPage from "@/components/FrontPage";
+import Header from "../components/Header";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Malcolms next app !!</h1>
-    </main>
+    <LanguageSwitcher>
+      <main className="container xl mx-auto ">
+        <Header />
+        <FrontPage />
+      </main>
+    </LanguageSwitcher>
   );
 }

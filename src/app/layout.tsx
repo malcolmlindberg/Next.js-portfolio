@@ -1,7 +1,4 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Malcolms next app",
@@ -15,7 +12,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
+
+// import React from "react";
+// import "./globals.css";
+// import { FC, ReactNode } from "react";
+
+// import Head from "next/head";
+// import { Html } from "next/document";
+
+// const Layout: FC<{ children?: ReactNode }> = ({ children }) => {
+//   return (
+//     <Html>
+//       {/* <Head></Head> */}
+//       <body>{children}</body>
+//     </Html>
+//   );
+// };
+
+// export default Layout;
